@@ -1,0 +1,29 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <catalogue type="technical">
+        <book>
+            <ISBN>0123456789</ISBN>
+            <title>Introduction to Data Representation</title>
+            <author>Andrew Smith</author>
+        </book>
+        <book>
+            <ISBN>1234567890</ISBN>
+            <title>Multi Paradigm Programming</title>
+            <author>Jane Carr</author>
+        </book>
+    </catalogue>
+
+    <catalogue type="cookery">
+        <book>
+            <ISBN>2345678901</ISBN>
+            <title>Cooking: Is it a Science or an Art?</title>
+            <author>Felicia Doe</author>
+        </book>
+        <book>
+            <ISBN>4567890123</ISBN>
+            <title>Baking Basics</title>
+            <author>Michel Williams</author>
+        </book>
+    </catalogue>
+</library>
