@@ -88,4 +88,4 @@ from app import app as application
 ---
 
 ## Web address: 
-https://eu.pythonanywhere.com/user/fezekan/files/home/fezekan/mysite
+http://fezekan.eu.pythonanywhere.com
