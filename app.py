@@ -10,6 +10,10 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///home/fezekan/mysite.db'
 db = SQLAlchemy(app)
 
 # Define a simple model
+class Author(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50), nullable=False)
+    
 class Book(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(50), nullable=False)
@@ -19,7 +23,12 @@ class Book(db.Model):
 with app.app_context():
     db.create_all()
 
+
 # Routes
+@app.route('/')
+def index():
+    return render_template('index.html')
+    
 @app.route('/api/books', methods=['GET'])
 def get_books():
     books = Book.query.all()
@@ -31,6 +40,17 @@ def get_books():
             'author': book.author
         })
     return jsonify({'books': book_list})
+
+@app.route('/api/authors', methods=['GET'])
+def get_authors():
+    authors = Author.query.all()
+    author_list = []
+    for author in authors:
+        author_list.append({
+            'id': author.id,
+            'name': author.name
+        })
+    return jsonify({'authors': author_list})
 
 @app.route('/api/books/<int:book_id>', methods=['GET'])
 def get_book(book_id):
@@ -66,9 +86,7 @@ def delete_book(book_id):
     db.session.commit()
     return jsonify({'message': 'Book deleted successfully'})
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
