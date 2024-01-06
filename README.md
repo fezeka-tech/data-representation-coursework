@@ -1,12 +1,12 @@
 # datarepresentationcoursework
-H. Dip
-Certainly! Below is a basic README template for your Flask application. Please customize it according to your specific application details and requirements.
+H. Diploma in Computing in Data Analytics
+
 
 ---
 
 # Flask RESTful API with Database
 
-This is a simple Flask web application with a RESTful API that links to one or more database tables. The application uses Flask, SQLAlchemy, and SQLite to demonstrate basic CRUD (Create, Read, Update, Delete) operations on a database.
+This is a simple Flask web application with a RESTful API that links to two database tables. The application uses Flask, SQLAlchemy, and SQLite to demonstrate basic CRUD (Create, Read, Update, Delete) operations on a database.
 
 ## Getting Started
 
@@ -26,7 +26,7 @@ Follow the instructions below to set up and run the Flask application on your lo
    cd data-representation-coursework
    ```
 
-2. Host my Flask application on PythonAnywhere byfollowing these steps:
+2. Host my Flask application on PythonAnywhere by following these steps:
 
 - Create an Account on PythonAnywhere:
 - Upload my Files:
@@ -37,7 +37,7 @@ Follow the instructions below to set up and run the Flask application on your lo
 
 Open a Bash console on PythonAnywhere.
 
-Navigate to the directory where your files are located,and create virtual envirenment.
+Navigate to the directory where your files are located,and create virtual environment.
     
   ```bash
   mkvirtualenv --python=/usr/bin/python3.8 myvirtualenv  # Use the appropriate Python version
