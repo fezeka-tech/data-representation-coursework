@@ -92,4 +92,6 @@ http://fezekan.eu.pythonanywhere.com
 
 ### Log Ins
 U: https://eu.pythonanywhere.com/user/fezekan/
-P: bleuRoot20
+P: Bleuberri20!
+
+Other git Repo for app: https://github.com/fezeka-tech/flask/blob/main/app.py
